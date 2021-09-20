@@ -29,6 +29,7 @@ function inputValue() {
 
 function inputValidation(angles) {
   if (angles.ang1 == "" || angles.ang2 == "" || angles.ang3 == "") return false;
+  if (angles.ang1 <= 0 || angles.ang2 <= 0) return false;
   return true;
 }
 
@@ -47,5 +48,6 @@ function output(res) {
 }
 
 function errorAlert() {
-  outputDiv.innerText = "Please enter all the angles";
+  outputDiv.innerText =
+    "Please enter all the angles and angles can't be zero or negative";
 }

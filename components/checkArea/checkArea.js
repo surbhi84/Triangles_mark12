@@ -19,18 +19,19 @@ function clickHandler() {
 
 function inputValue() {
   return {
-    b: base.value,
-    h: height.value,
+    b: parseFloat(base.value),
+    h: parseFloat(height.value),
   };
 }
 
 function inputValidation(input) {
-  if (input.b == "" || input.h == "") return false;
+  if (isNaN(input.b) || isNaN(input.h)) return false;
+  if (input.b <= 0 || input.h <= 0) return false;
   return true;
 }
 
 function calculateArea(input) {
-  let area = (parseFloat(input.b) * parseFloat(input.h)) / 2;
+  let area = (input.b * input.h) / 2;
   console.log(area);
   return area;
 }
