@@ -8,7 +8,27 @@
     <title>PlayQuiz</title>
   </head>
   <body>
-    <h1>hey its .html</h1>
+    <div id="initial-block">
+      <h1>ARE YOU READY?</h1>
+      <button id="btn">YES</button>
+    </div>
+    <div id="question-block">
+      <span id="ques">quest</span>
+      <input type="radio" name="opt" class="a" value="0" />
+      <label for="a" id="label1"></label>
+
+      <input type="radio" name="opt" class="a" value="1" />
+      <label for="b" id="label2"></label>
+
+      <input type="radio" name="opt" class="a" value="2" />
+      <label for="c" id="label3"></label>
+
+      <input type="radio" name="opt" class="a" value="3" />
+      <label for="d" id="label4"></label>
+      <br />
+      <button id="next-btn">Next</button>
+    </div>
+    <div id="results"></div>
   </body>
-  <script src="playQuiz.js" type="text/javascript"></script>
+  <script src="playQuiz.js" type="module"></script>
 </html>
