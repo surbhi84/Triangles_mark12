@@ -43,5 +43,5 @@ function output(result) {
 
 function errorAlert() {
   outputDiv.innerText =
-    "Please fill both input tabs and sides should be greater then zero";
+    "ERROR: please fill both input tabs and sides should be greater then zero";
 }

@@ -2,55 +2,115 @@ body {
   background-repeat: no-repeat;
 }
 
-.navbar {
-  background-color: rgb(226, 216, 216);
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #dae2f8 0%,
+    #d6a4a4 51%,
+    #dae2f8 100%
+  );
 }
-
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-img {
-  margin: 0.5rem;
-  height: 6rem;
-  width: 8rem;
-  border-radius: 4px;
-}
-
-.logo {
+.btn {
+  margin: 10px;
+  padding: 15px 40px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 5rem;
-  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 8px;
+  display: block;
 }
 
-.logo-container {
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 
+  padding: 0.5rem;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+} */
+
+/* .btn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out;
+  transition-duration: 20ms;
+} */
+
+.buttons {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b9e8f2;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+
+.main {
+  background-image: url(/components/media/tria.webp);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  height: 90vh;
+}
+
+.input-tab {
+  height: 2rem;
+  border-radius: 8px;
+  border: 1.5px solid black;
+  font-size: larger;
+  margin: 1rem;
+}
+
+#initial-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.nav-options {
-  display: inline;
-  padding: 0.5rem;
-  font-family: "Playfair Display";
-  font-weight: bold;
-  font-size: large;
-  text-decoration: none;
+#question-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-opt:hover {
-  color: #88f3d9;
+h2 {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.nav-opt .active {
-  color: #88f3d9;
+
+#output-div {
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+#ques {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 1rem;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
 }

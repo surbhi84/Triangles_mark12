@@ -4,33 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="playQuiz.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="/triangle.css" />
+
     <title>PlayQuiz</title>
   </head>
   <body>
-    <div id="initial-block">
-      <h1>ARE YOU READY?</h1>
-      <button id="btn">YES</button>
-    </div>
-    <div id="question-block">
-      <span id="ques"></span>
-      <input type="radio" name="opt" class="a" value="0" />
-      <label for="a" id="label1"></label>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="/index.html"><h1 class="logo">Trigon3</h1></a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-options">
+            <a class="nav-opt" href="/components/isTriangle/isTriangle.html"
+              >Triangle?</a
+            >
+          </li>
+          <li class="nav-options">
+            <a
+              class="nav-opt"
+              href="/components/checkHypotenuse/checkHypotenuse.html"
+              >Hypotenuse</a
+            >
+          </li>
+          <li class="nav-options">
+            <a class="nav-opt" href="/components/checkArea/checkArea.html"
+              >Area</a
+            >
+          </li>
+          <li class="nav-options">
+            <a class="nav-opt" href="/components/playQuiz/playQuiz.html"
+              >Quiz</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <input type="radio" name="opt" class="a" value="1" />
-      <label for="b" id="label2"></label>
+    <div class="main">
+      <div class="buttons">
+        <div id="initial-block">
+          <h2>ARE YOU READY?</h2>
+          <button class="btn" id="btn">YES</button>
+        </div>
+        <div id="question-block">
+          <span id="ques"></span>
+          <div class="radio-options">
+            <span>
+              <input type="radio" name="opt" class="a" value="0" />
+              <label for="a" id="label1"></label
+            ></span>
 
-      <input type="radio" name="opt" class="a" value="2" />
-      <label for="c" id="label3"></label>
+            <span>
+              <input type="radio" name="opt" class="a" value="1" />
+              <label for="b" id="label2"></label
+            ></span>
 
-      <input type="radio" name="opt" class="a" value="3" />
-      <label for="d" id="label4"></label>
-      <br />
-      <button id="next-btn">Next</button>
-    </div>
-    <div id="results">
-      <p id="para"></p>
-      <button id="try-again">Try Again</button>
+            <span>
+              <input type="radio" name="opt" class="a" value="2" />
+              <label for="c" id="label3"></label
+            ></span>
+
+            <span>
+              <input type="radio" name="opt" class="a" value="3" />
+              <label for="d" id="label4"></label
+            ></span>
+          </div>
+
+          <button class="btn" id="next-btn">Next</button>
+        </div>
+        <div id="results">
+          <p id="para"></p>
+          <button class="btn" id="try-again">Try Again</button>
+        </div>
+      </div>
     </div>
   </body>
   <script src="playQuiz.js" type="module"></script>

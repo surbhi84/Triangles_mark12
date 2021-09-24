@@ -41,5 +41,5 @@ function output(result) {
 }
 
 function errorAlert() {
-  outputDiv.innerText = "Please enter all the angles";
+  outputDiv.innerText = "ERROR: please enter all the angles";
 }

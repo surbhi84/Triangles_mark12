@@ -26,7 +26,7 @@ function clickHandler() {
   qno = 0;
   score = 0;
   initialBlock.style.display = "none";
-  questionBlock.style.display = "block";
+  questionBlock.style.display = "flex";
   resultDiv.style.display = "none";
 
   quesDisplay(qno);

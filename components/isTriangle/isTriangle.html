@@ -4,22 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="isTriangle.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="/triangle.css" />
+
     <title>IsTriangle</title>
   </head>
   <body>
-    <h1>
-      Hey Do you wanna check if three angles make a triangle or not? ps.enter
-      the angles below in degrees.
-    </h1>
-    <label for="angle-1">Angle 1:</label>
-    <input type="number" id="angle-1" class="input-tab" />
-    <label for="angle-2">Angle 2:</label>
-    <input type="number" id="angle-2" />
-    <label for="angle-3">Angle 3:</label>
-    <input type="number" id="angle-3" />
-    <button id="check-btn">CHECK</button>
-    <div id="output-div"></div>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="/index.html"><h1 class="logo">Trigon3</h1></a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-options">
+            <a class="nav-opt" href="/components/isTriangle/isTriangle.html"
+              >Triangle?</a
+            >
+          </li>
+          <li class="nav-options">
+            <a
+              class="nav-opt"
+              href="/components/checkHypotenuse/checkHypotenuse.html"
+              >Hypotenuse</a
+            >
+          </li>
+          <li class="nav-options">
+            <a class="nav-opt" href="/components/checkArea/checkArea.html"
+              >Area</a
+            >
+          </li>
+          <li class="nav-options">
+            <a class="nav-opt" href="/components/playQuiz/playQuiz.html"
+              >Quiz</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="buttons">
+        <h2>Enter the angles below in degrees</h2>
+
+        <label for="angle-1">Angle 1:</label>
+        <input class="input-tab" type="number" id="angle-1" />
+        <label for="angle-2">Angle 2:</label>
+        <input class="input-tab" type="number" id="angle-2" />
+        <label for="angle-3">Angle 3:</label>
+        <input class="input-tab" type="number" id="angle-3" />
+        <button class="btn" id="check-btn">CHECK</button>
+        <div id="output-div"></div>
+      </div>
+    </div>
   </body>
   <script src="isTriangle.js" type="text/javascript"></script>
 </html>

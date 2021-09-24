@@ -49,5 +49,5 @@ function output(res) {
 
 function errorAlert() {
   outputDiv.innerText =
-    "Please enter all the angles and angles can't be zero or negative";
+    "ERROR: please enter all the angles and angles can't be zero or negative";
 }
