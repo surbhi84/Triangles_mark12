@@ -1,5 +1,5 @@
 footer {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   margin: 0;
   text-align: center;
   background-color: #c8ccd5;
@@ -15,4 +15,9 @@ li {
 ul {
   padding-left: 0;
   padding: 1rem;
+  margin: 0;
+}
+
+#legacyText {
+  padding-top: 1rem;
 }
