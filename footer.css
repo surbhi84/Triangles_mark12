@@ -1,0 +1,18 @@
+footer {
+  padding-top: 3rem;
+  margin: 0;
+  text-align: center;
+  background-color: #c8ccd5;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 0;
+  padding: 1rem;
+}
