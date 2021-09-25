@@ -12,6 +12,7 @@ A web app that opens you to a variety of options all relating to triangles. Here
 * Consists of gif,images and font styles.
 * Named after the archaic term for the triangle, Trigon.
 * The 3 in the name signifies of the three sides.
+* Contains a footer with links to the developers social handles
 
 ## Technologies
 * Html
