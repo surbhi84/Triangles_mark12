@@ -37,9 +37,9 @@ function calculateArea(input) {
 }
 
 function output(result) {
-  outputDiv.innerText = `The area of the triangle is ${result}`;
+  outputDiv.innerText = `The area of the triangle is ${result}.`;
 }
 
 function errorAlert() {
-  outputDiv.innerText = "ERROR: please enter all the angles";
+  outputDiv.innerText = "ERROR: Please enter all the angles!";
 }

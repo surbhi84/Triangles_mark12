@@ -43,11 +43,11 @@ function calculateAngles(angles) {
 
 function output(res) {
   if (res == true) {
-    outputDiv.innerText = "Yayy your angles make a trigon";
-  } else outputDiv.innerText = "Ooops your angles do not make a trigon";
+    outputDiv.innerText = "Yayy! Your angles make a trigon.";
+  } else outputDiv.innerText = "Ooops your angles do not make a trigon.";
 }
 
 function errorAlert() {
   outputDiv.innerText =
-    "ERROR: please enter all the angles and angles can't be zero or negative";
+    "ERROR: Please fill all input tabs with values greater then zero!";
 }

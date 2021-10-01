@@ -38,10 +38,10 @@ function calculateHypotenuse(input) {
 }
 
 function output(result) {
-  outputDiv.innerText = `The Hypotenuse of the triangle is ${result}`;
+  outputDiv.innerText = `The Hypotenuse of the triangle is ${result}.`;
 }
 
 function errorAlert() {
   outputDiv.innerText =
-    "ERROR: please fill both input tabs and sides should be greater then zero";
+    "ERROR: Please fill both input tabs with values greater then zero!";
 }

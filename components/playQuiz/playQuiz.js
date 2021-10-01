@@ -69,7 +69,7 @@ function checkAnswer(qno) {
 function result(score) {
   resultDiv.style.display = "block";
   questionBlock.style.display = "none";
-  para.innerText = `Your score: ${score} \n Your correct answers:${score / 2} `;
+  para.innerText = `Your score: ${score} \n Correct answers: ${score / 2} `;
 }
 
 tryAgain.addEventListener("click", clickHandler);
